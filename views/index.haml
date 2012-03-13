@@ -1,0 +1,45 @@
+%h1 
+  XMID - Extensible media ID
+
+%p
+  %table(cellspacing="10")
+    %tr(align="left")
+      %th Sign Up as a media creator
+      %th Log in
+    %tr(valign="top")
+      %td
+        %form(method="post" action="signup")
+          .field
+            .label Name
+            .entry 
+              %input(name="name" type="string")
+          .field
+            .label Email
+            .entry 
+              %input(name="email" type="string")
+          .field
+            .label Password
+            .entry 
+              %input(name="password" type="password")
+          .field
+            .label Password
+            .entry 
+              %input(name="again" type="password")
+          .go
+            %input(type="submit" value="Sign Up")
+      %td
+        %form(method="post" action="login")
+          .field
+            .label Email
+            .entry 
+              %input(name="email" type="string")
+          .field
+            .label Password
+            .entry 
+              %input(name="password" type="password")
+          .go
+            %input(type="submit" value="Log In")
+
+%hr
+%i
+  %a(href='dump') dump
